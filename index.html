@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espetinho do Baiano</title>
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { background-color: #121212; color: #e0e0e0; font-family: sans-serif; }
+    </style>
+</head>
+<body class="p-4">
+    <header class="text-center my-6">
+        <h1 class="text-3xl font-bold text-orange-500">🍢 Espetinho do Baiano</h1>
+        <p class="text-gray-400 text-sm mt-1">O melhor sabor da região!</p>
+    </header>
+
+    <main class="max-w-md mx-auto space-y-4">
+        <!-- Card Espetinho 1 -->
+        <div class="bg-zinc-900 p-4 rounded-xl border border-zinc-800 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg text-white">Espetinho de Carne</h3>
+                <p class="text-orange-400 font-medium">R$ 8,00</p>
+            </div>
+            <span class="bg-orange-500 text-black font-bold px-3 py-1 rounded-full text-xs">Disponível</span>
+        </div>
+
+        <!-- Card Espetinho 2 -->
+        <div class="bg-zinc-900 p-4 rounded-xl border border-zinc-800 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg text-white">Espetinho de Frango</h3>
+                <p class="text-orange-400 font-medium">R$ 7,50</p>
+            </div>
+            <span class="bg-orange-500 text-black font-bold px-3 py-1 rounded-full text-xs">Disponível</span>
+        </div>
+
+        <!-- Card Espetinho 3 -->
+        <div class="bg-zinc-900 p-4 rounded-xl border border-zinc-800 flex justify-between items-center">
+            <div>
+                <h3 class="font-bold text-lg text-white">Coração de Galinha</h3>
+                <p class="text-orange-400 font-medium">R$ 9,00</p>
+            </div>
+            <span class="bg-orange-500 text-black font-bold px-3 py-1 rounded-full text-xs">Disponível</span>
+        </div>
+    </main>
+
+    <footer class="text-center mt-12 text-zinc-600 text-xs">
+        <p>Desenvolvido com 🧡 pelo celular</p>
+    </footer>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(() => console.log('Service Worker Registrado!'))
+                .catch(err => console.log('Erro no Worker:', err));
+        }
+    </script>
+</body>
+</html>
