@@ -1,0 +1,9 @@
+{
+  "name": "Espetinho do Baiano",
+  "short_name": "Baiano",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#f97316",
+  "orientation": "portrait"
+}
